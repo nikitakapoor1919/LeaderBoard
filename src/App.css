@@ -1,38 +1,112 @@
-.App {
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  top: 0;
+  border-radius: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  -webkit-border-radius: 0;
+}
+
+body,
+html {
+  font-family: 'Ubuntu', sans-serif;
+  height: 100%;
+  width: 100%;
+  
+}
+
+.header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(to right, rgb(22, 69, 139) , rgb(162, 214, 40));
+  color: #fff;
+  font-family: 'Galada', cursive;
+  overflow: hidden;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header__logo {
+  width: 76px;
+  height: 76px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header__title {
+  font-size: 66px;
+  margin: 10vh 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.b{
+  margin:100px;
+}
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin:0;
+  padding:0;
+  width: 100%;
+}
+thead{
+  background-color:rgb(14, 65, 44);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+table tr {
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+table th, table td {
+  padding: 10px;
+  text-align: center;
+}
+table th {
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.a{
+  background-color: rgba(0, 0, 0, 0.884);
+  color: white;
+}
+table .a:hover{
+  background-color:rgb(189, 147, 10);
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+@media screen and (max-width: 600px) {
+ 
+  .header__title {
+    font-size: 50px;
   }
-  to {
-    transform: rotate(360deg);
+    table {
+      width:100%;
+      border: 0;
+    }
+    
+    table thead {
+      display: none;
+    }
+    table tr {
+      border-bottom: 2px solid #ddd;
+      display: block;
+      margin-bottom: 10px;
+    }
+    table td {
+      border-bottom: 1px dotted #ccc;
+      display: block;
+      font-size: 13px;
+      text-align: right;
+    }
+    table td:last-child {
+      border-bottom: 0;
+    }
+    table td:before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
   }
-}
