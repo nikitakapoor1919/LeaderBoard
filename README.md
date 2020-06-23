@@ -11,3 +11,5 @@ Write these steps on Command Line
 1. git clone https://github.com/nikitakapoor1919/LeaderBoard.git
 2. cd leaderboard
 3. code .(To Open VS Code)
+
+<a href='https://leaderboardreact.netlify.app/'>Live Demo</a>
